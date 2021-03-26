@@ -1,0 +1,30 @@
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <form action="#" method="post">
+	<h1 style="text-align:left;color:red">Student Information</h1>
+	First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<input type="text" /> <br /> <br />
+	Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" /> <br /> <br />
+	E-mail Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<input type="email" /> <br /> <br />
+	Enter Your Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" max="100" min="1"/> <br /> <br />
+	Select Color:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+	<input type="color" /> <br /> <br />
+	Date Of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+	<input type="date" /> <br /> <br />
+	Ratings for this site:
+	<input type="range" min='1' max='5'/> <br /> <br />
+	<input type="submit" />
+  </form>
+ </BODY>
+</HTML>

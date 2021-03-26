@@ -1,0 +1,47 @@
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <form action="aricle_demo.html" method="post" id="user_form">
+		User name: <input type="text" autofocus="autofocus" /><br/><br/>
+		Age: <input type="number" min="0" max="100" step="1"/><br/><br/>
+		Select Resume: <input type="file" multiple="multiple" /><br/><br/>
+		Pin code: <input type="text" required="required" pattern="[0-9]{6,6}" /><br/><br/>
+		Mobile No: <input type="text" required="required" pattern="[0-9]{10,10}"/><br/><br/>
+		Select City:
+		<select>
+			<optgroup label='Maharashtra'>
+				<option>Pune</option>
+				<option>Mumbai</option>
+				<option>Nagpur</option>
+				<option>Kolhapur</option>
+				<option>Nashik</option>
+				<option>Aurangabad</option>
+			</optgroup>
+			<optgroup label='Karnataka'>
+				<option>Banglore</option>
+				<option>Belgaon</option>
+				<option>Gulbarga</option>
+				<option>Mysore</option>
+				<option>Hubli</option>
+				<option>Bijapur</option>
+			</optgroup>
+			<optgroup label=''>
+				<option>Pune</option>
+				<option>Mumbai</option>
+				<option>Nagpur</option>
+				<option>Kolhapur</option>
+				<option>Nashik</option>
+				<option>Aurangabad</option>
+			</optgroup>
+		</select><br/><br/>
+		<input type="image" src="thumbnail.jpg" width="50" height="50" />
+  </form>
+ </BODY>
+</HTML>

@@ -1,0 +1,18 @@
+<html>
+	<script src="jquery.js">
+	</script>
+	<script>
+		$(document).ready(function()
+		{
+			$("button").click(function()
+			{
+				$("p").hide(3000,function()
+				{
+					alert("The paragraph is now hidden");
+				})
+			})
+		})
+	</script>
+	<button>Hide</button>
+	<p>This is a paragraph with little content.</p>
+</html>

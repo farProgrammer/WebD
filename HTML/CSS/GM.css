@@ -1,0 +1,52 @@
+#body
+{
+	
+
+	height:900px;
+	background-color:black;
+	margin:10px;
+	color:white;
+}
+#header
+{
+	height:150px;
+	border-type:solid;
+	border-color:white;
+	border-width:thin;
+	background-color:pink;
+}
+#menubar
+{
+	height:45px;
+	margin:5px;
+border-color:white;
+	border-width:thin;
+	background-color:red;
+	
+}
+#leftSec
+{
+	height:670px;
+	width:160px;
+	background-color:green;
+	float:left;
+
+}
+#panel
+{
+	 
+   
+ background: #FFFFFF;
+  
+  width: 700px;
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2013-04-10 v1.0.0
+/demo3_app_cache.js
+/car.jpg
+/demo3_app_cache.html
+
+NETWORK:
+login.php
+
+FALLBACK:
+/html/ /offline.html

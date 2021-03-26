@@ -1,0 +1,20 @@
+<script>
+ function getServerTime()
+ {
+	if(typeof(EventSource)!="undefined")
+	{
+		var source=new EventSource("demo1_sse.php");
+		source.onmessage=function(event)
+		{
+   			document.getElementById('msg').innerHTML = event.data;
+		}
+	}
+	else
+	{
+  		document.getElementById('msg').innerHTML = "Sorry, your browser does not support server-sent events...";
+	}
+ }
+</script>
+<body onload='getServerTime()'>
+	<div id='msg' style='float:right'>Server Time</div>
+</body>

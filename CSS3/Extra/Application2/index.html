@@ -1,0 +1,161 @@
+<html>
+<head>
+	<title>website</title>
+</head>
+
+<script type="text/javascript">
+	
+		var count=0;
+		var i= new Array('adv1.jpg','adventure1.jpg','adv3.jpg','adv4.jpg','mukund.jpg');
+		document.getElementById('c').style.backgroundImage = "url("+i[0]+")";
+		
+		function next()
+		{
+			var c = countingP();
+			document.getElementById('c').style.backgroundImage = "url("+i[c]+")";
+		}
+		function countingP()
+		{
+			if (count == i.length-1)
+			{
+				count = -1;
+			}
+			count += 1;
+			return count;
+		}
+
+		function pre()
+		{
+			var c = countingM();
+			document.getElementById('c').style.backgroundImage = "url("+i[c]+")";
+		}
+		function countingM()
+		{
+			if (count == 0)
+			{
+				count = i.length;
+			}
+			count -= 1;
+			return count;
+		}
+
+	</script>
+
+
+<style type="text/css">
+body
+{
+	background-size:100% 100%;
+	background-image:url('sun.jpg');
+}
+
+h1
+{
+	position:absolute;
+	-webkit-transform:translate(100px,0px);
+	font-family:forte;
+	font-size:50px;
+	color:red;
+	text-shadow:5px 5px 5px black;
+}
+
+h2
+{
+	position:absolute;
+	-webkit-transform:translate(20px,80px);
+	font-family:forte;
+	font-size:20px;
+	color:yellow;
+	text-shadow:5px 5px 5px black;
+}
+
+h3
+{	
+	position:absolute;
+	-webkit-transform:translate(100px,160px);
+	font-family:Gabriola;
+	font-size:22px;
+	color:red;
+}
+
+.l
+{
+	position:absolute;
+	-webkit-transform:translate(720px,0px);
+	font-family:forte;
+	color:red;
+	font-size:20px;
+	border-radius:10px;
+	background-color:orange;
+}
+
+#b
+{
+	position:absolute;
+	border-radius:20px 0px 10px 20px;
+	-webkit-transform:translate(720px,300px);
+	height:300px;
+	width:300px;
+}
+
+#c
+{
+	border-radius:20px 0px 10px 20px;
+	position:absolute;
+	height:320px;
+	width:480px;
+	-webkit-transform:translate(100px,250px);
+	background-image:url('adventure.jpg');
+}
+
+#id1
+{
+	height:20px;
+	width:20px;
+	position:absolute;
+	-webkit-transform:translate(50px,400px);
+}
+
+#id2
+{
+	height:20px;
+	width:20px;
+	position:absolute;
+	-webkit-transform:translate(610px,400px);
+}
+
+</style>
+<body>
+	<h1>Welcome to Adventure With Us!</h1></br>
+	<h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp It has always been a pleasure assisting you!</br> Register quickly and we'll let you know the adventure spots in your city!!</h2>
+	<h3>
+		<a href='aboutus.html'>About us!</a>//<a href='sample.html'>contact us!</a>//
+		<a href='articlenew.html'>Articles</a>//<a href='intro.html'>Copyrights</a>//
+		<a href='event.html'>Events</a>
+	</h3>
+	<fieldset class='l'>
+		 <legend style='text-align:center;color:green;font-weight:bold;font-size:20px;'>Register Free</legend>
+		 <form action='#' method='get'>
+		 First Name:
+		 <input type='text' name='fname' required='required' placeholder='e.g.Sahil, Kabir'><br><br>
+		 Last Name:
+		 <input type='text' name='lname' required='required' placeholder='e.g.Patel,Singh'><br><br>
+		 Email:&emsp;&emsp;
+		 <input type='email' name='email' required='required' placeholder='e.g.xyz@somewhere,com'><br><br>
+		 Age:&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+		 <input type='number' name='age' required='required' placeholder='Age' min='10' max='60'><br><br>
+		 <input style='background:darkgreen;font-weight:bold' type='Submit' value='Submit'>&emsp;
+		 <input style='background:darkgreen;font-weight:bold' type='Reset' value='Cancel'> 	
+		 </form>
+	</fieldset>
+	<video id='b' controls='controls'>
+		<source src='Achko Machko Yo Yo Honey Singh.mp4' type='video/mp4'>
+	</video>
+	<fieldset id='id1'>
+		<img src="bb.png" height='20' width='20' onclick='pre()'/>
+	</fieldset>
+	<fieldset id='c'>	</fieldset>
+	<fieldset id='id2'>
+		<img src="ff.png" height='20' width='20' onclick='next()'/>
+	</fieldset>
+</html>

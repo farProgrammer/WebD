@@ -1,0 +1,51 @@
+#body
+{
+	font-family: 'Times New Roman' , Times, serif;
+    color: pink;
+    background-color: blue;
+    height: 900px;
+    padding: 0px;
+    margin: 20px;
+	
+}
+#header
+{
+	height:200px;
+	background-color:green;
+	color:white;
+	font-style:bold;
+	background-image:url('line.jpg');
+}
+#left
+{
+	height:600px;
+	width:200px;
+	background-color:pink;
+	color:brown;
+	font-weight:bold;
+	float:left;
+}
+#right
+{
+	height:600px;
+	width:200px;
+	background-color:pink;
+	color:white;
+	font-style:bold;
+	float:right;
+word-wrap:break-word;
+}
+#panel
+{
+	height:600px;
+	background-color:black;
+	color:white;
+	font-style:bold;
+background-image:url('flower.jpg');
+}
+#footer
+{
+height:100px;
+	clear:both;
+	background-color:red;
+}

@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script> 
+
+
+$(document).ready(function()
+{
+	$("a").click(function()
+	{
+		
+var id = $(this).attr('id');
+		
+			console.log("hello");
+		   $("#panel").slideToggle("slow");
+	
+    });
+});
+
+
+
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+ 
+
+
+
+
+   <p id="p1">Current Issues</p>
+<div  id="link1">
+
+		<a href="#" id="a1">MIT Enginnering Sept-18</a>
+		<a href="#" id="a" >MIT Technology Sept-18</a>
+		<a href="#" >MIT IT College Sept-18</a>
+
+</div>
+<div id="panel"><object width="600" height="600" data="supriya zagare resume.pdf"></object></div>
+
+</body>
+</html>

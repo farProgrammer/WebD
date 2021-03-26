@@ -1,0 +1,67 @@
+<html>
+	<body>
+		<div id='div1' style='font-family:calibri;font-size:30px;padding-top:20px'>
+			HTML5 
+		</div>
+		<div id='div2' style='font-family:verdana;font-size:27px;padding-top:20px'>
+			CSS3 
+		</div>
+		<div id='div3' style='font-family:monotype corsiva;font-size:35px;padding-top:10px;padding-bottom:10px'>
+			jQuery
+		</div>
+		<div id='div4' style='font-family:arial;font-size:25px;padding-top:20px'>
+			WordPress
+		</div>
+		<div id='div5' style='font-family:forte;font-size:26px;padding-top:20px'>
+			Joomla
+		</div>
+	</body>
+	<style>
+		body
+		{
+			background:#8080FF;
+		}
+		#div1,#div2,#div3,#div4,#div5
+		{
+			height:55px;
+			width:150px;
+			margin-top:200px;
+			margin-left:40px;
+			background:#8C0073;
+			border-radius:10px;
+			float:left;
+			text-align:center;
+			color:darkblue;
+			font-weight:bold;
+			box-shadow:10px 10px 5px black;
+			text-shadow:3px 2px 1px black;	
+			cursor:pointer;
+		}
+	</style>
+	<script src='jquery.js'>	</script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#div1').click(function()
+			{	
+				window.location.href = 'http://www.w3schools.com/htmL';
+			})
+			$('#div2').click(function()
+			{	
+				window.location.href = 'http://www.w3schools.com/css3';
+			})
+			$('#div3').click(function()
+			{	
+				window.location.href = 'http://www.jquery.com';
+			})
+			$('#div4').click(function()
+			{	
+				window.location.href = 'http://www.wordpress.org';
+			})
+			$('#div5').click(function()
+			{	
+				window.location.href = 'http://www.joomla.org';
+			})
+		})	
+	</script>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <style>
+	div  
+	{ 
+		width: 200px; 
+		height: 100px; 
+		border:2px solid grey;
+		display:none;
+		border-radius:40px;padding:10px;
+		text-align:justify;
+		margin-top:20px;
+	}
+  </style>
+  <script src="jquery-1.9.1.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+	$(document).ready(function()
+	{
+		$('#btn1').click(function()
+		{
+			$('div').show('bounce',1000);/*fold,bounce,blind,clip,drop,explode,highlight,puff,scale,sizze,slide*/
+		})
+		$('#btn2').click(function()
+		{
+			$('div').hide('highlight',1000);/*fold,bounce,blind,clip,drop,explode,highlight,puff,scale,slide*/
+		})
+		$('#btn3').click(function()
+		{
+			$('div').toggle('slide',1000);/*fold,bounce,blind,clip,drop,explode,highlight,puff,scale,size,slide,shake*/
+		})
+	})
+  </script>
+  <button id='btn1'>Show</button>	
+  <button id='btn2'>Hide</button>	
+  <button id='btn3'>Toggle</button>	
+  <div>
+      PHP is server-side scripting.jQueryUI is used to create more attractive web pages very much faster. HTML5 supports multimedia
+  </div>
+  
+</html>

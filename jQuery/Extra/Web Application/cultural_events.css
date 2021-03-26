@@ -1,0 +1,88 @@
+.part1
+{
+	height:100px;
+}
+.part1 p
+{
+	margin:25px 0px 0px 0px;
+	font-size:50px;
+	float:left;
+}
+.part1 input
+{
+	margin:65px 5px 0px 5px;
+}
+.part1 img
+{
+	float:right;
+}
+.part2
+{
+	background:lightskyblue;
+	height:20px;
+	padding:5px;
+	color:indigo;
+	font-weight:bold;
+}
+.part2 a,b
+{
+	float:right;
+}
+.part2 b
+{
+	margin-right:30px;
+	text-decoration:underline;
+}
+#image
+{
+	border-radius:20px 0px 10px 20px;
+	position:absolute;
+	height:320px;
+	width:480px;
+	-webkit-transform:translate(50px,100px);
+	background:black;
+}
+
+#next
+{
+	height:20px;
+	width:20px;
+	position:absolute;
+	-webkit-transform:translate(590px,250px);
+}
+#sec2
+{
+	float:right;
+	margin-top:20px;
+}
+.part3 table
+{
+	width:300px;
+	background:#D8DFE6;
+}
+.part3 tr
+{
+	height:40px;
+}
+.part3 td
+{
+	border-bottom:1px dotted black;
+	padding:5px 0px 5px 5px;
+}
+a
+{
+	text-decoration:none;
+}
+a:link
+{
+	color:Red;
+}
+a:hover
+{
+	color:blue;
+	text-decoration:underline;
+}
+a:active
+{
+	color:black;
+}

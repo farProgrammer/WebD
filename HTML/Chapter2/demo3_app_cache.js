@@ -1,0 +1,1 @@
+document.write("<b style='color:red'>These is JavaScript</b>");

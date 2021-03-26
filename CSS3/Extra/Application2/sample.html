@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Sample css3</title>
+</head>
+ 
+<style type="text/css">
+body
+{	
+	position:absolute;
+	background-image:url('adventure1.jpg');
+	background-size:100% 100%;
+	-webkit-animation:lee 10s;
+}
+
+@-webkit-keyframes lee
+{
+	0%{background-image:url('adv1.jpg');}
+	50%{background-image:url('adv2.jpg');}
+	100%{background-image:url('adv3.jpg');}
+}
+#h
+{
+	font-family:Gigi;
+	font-size:30px;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(0px,0px);
+	margin:200px;
+	border:2px black;
+	padding:30px 60px;
+	background-color:gray;
+	width:300px;
+	border-radius:50px 0px 50px 0px;
+	box-shadow:15px 15px 15px red;
+}
+
+#i
+{
+	position:absolute;
+	-webkit-transform:translate(0px,100px);
+	font-family:forte;
+	color:white;
+	margin:200px;
+	border:2px black;
+	padding:30px 60px;
+	background-color:blue;
+	width:300px;
+	border-radius:50px 0px 50px 0px;
+	box-shadow:15px 15px 15px gray;
+}
+</style>
+<body>
+<legend id='h'>Contact us</legend>
+<div id='i'>xyz chambers</br>
+			5 block</br>
+			A/328/5</br>
+			floor no 5</br>
+			Kothrud</br>
+			pincode:411211</br>
+			Pune, Maharashtra.
+</div>
+</body>
+</html>

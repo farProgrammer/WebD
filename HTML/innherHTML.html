@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function changeText2()
+{
+var userInput = document.getElementById('userInput').value;
+document.getElementById("p1").innerHTML=userInput;
+document.write(userInput);
+
+}
+</script>
+</head>
+<body>
+
+
+
+<input type='text' id='userInput' placeholder="Enter Name" />
+<p id="p1"></p>
+<input type='button' onclick='changeText2()' value='Change Text'/>
+</body>
+</html>

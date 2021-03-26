@@ -1,0 +1,203 @@
+<html>
+<head>
+	<title>Sample css3</title>
+</head>
+ 
+<style type="text/css">
+
+
+div
+{	
+	position:absolute;
+	height:300px;
+	background:gray;
+	border:2px red;
+	border-radius:25px;
+	padding:20px 50px;
+	box-shadow:5px 5px 5px black;
+}
+
+#container
+{
+		border:2px solid black;
+		height:650px;
+		width:1250px;
+		box-shadow:30px 30px 20px white;
+}
+
+
+.article
+{	
+	padding:20px 50px;
+	color:black;
+	width:200px;
+}
+
+.h1
+	{
+		color:black;
+		font-family:forte;
+		text-shadow:5px 5px 5px white;
+		font-size:30px;
+	}
+
+
+#article1
+{
+	background-color:red;
+	box-shadow:10px 10px blue;
+	font-size:14px;
+	font-family:forte;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(20px,20px);
+	-webkit-animation:animi1 20s;
+}
+
+
+@-webkit-keyframes animi1
+{
+		0%	{-webkit-transform:translate(20px,20px); }
+		20%	{-webkit-transform:translate(450px,20px);}
+		40%	{-webkit-transform:translate(900px,20px);}
+		60%	{-webkit-transform:translate(700px,220px);}
+		80% {position:relative;-webkit-transform:translate(500px,350px);}
+		100%{-webkit-transform:translate(250px,220px);}
+	}
+
+
+#article2
+{
+	background-color:yellow;
+	box-shadow:10px 10px orange;
+	font-size:14px;
+	font-family:forte;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(450px,20px);
+	-webkit-animation:animi2 20s;
+}
+
+@-webkit-keyframes animi2
+{
+		0%	{-webkit-transform:translate(450px,20px);}
+		20%	{-webkit-transform:translate(900px,20px);}
+		40%	{-webkit-transform:translate(700px,220px);}
+		60%	{-webkit-transform:translate(500px,350px);}
+		80%	{-webkit-transform:translate(250px,220px);}
+		100%{-webkit-transform:translate(20px,20px);}
+	}
+
+
+#article3
+{
+	background-color:orange;
+	font-size:14px;
+	box-shadow:10px 10px yellow;
+	font-family:forte;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(900px,20px);
+	-webkit-animation:animi3 20s;
+}
+
+@-webkit-keyframes animi3
+{
+		0%	{-webkit-transform:translate(900px,20px); }
+		20%	{-webkit-transform:translate(700px,220px);}
+		40%	{position:relative; -webkit-transform:translate(500px,350px);}
+		60%	{-webkit-transform:translate(250px,220px);}
+		80%	{-webkit-transform:translate(20px,20px);}
+		100%{-webkit-transform:translate(450px,20px);}
+	}
+
+#article4
+{
+	background-color:blue;
+	font-size:14px;
+	box-shadow:10px 10px red;
+	font-family:forte;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(250px,220px);
+	-webkit-animation:animi4 20s;
+}
+
+@-webkit-keyframes animi4
+{
+		0%	{-webkit-transform:translate(700px,220px); }
+		20%	{position:relative; -webkit-transform:translate(500px,350px);}
+		40%	{-webkit-transform:translate(250px,220px);}
+		60%	{-webkit-transform:translate(20px,20px);}
+		80%	{-webkit-transform:translate(450px,20px);}
+		100%{-webkit-transform:translate(900px,20px);}
+	}
+
+
+#article5
+{
+	background-color:aqua;
+	font-size:14px;
+	box-shadow:10px 10px green;
+	font-family:forte;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(700px,220px);
+	-webkit-animation:animi5 20s;
+}
+
+@-webkit-keyframes animi5
+{
+		0%	{-webkit-transform:translate(250px,220px); }
+		20%	{-webkit-transform:translate(20px,20px);}
+		40%	{-webkit-transform:translate(450px,20px);}
+		60%	{-webkit-transform:translate(900px,20px);}
+		80% {-webkit-transform:translate(700px,220px);}
+		100%{position:relative; -webkit-transform:translate(500px,350px);}
+	}
+
+
+#article6
+{
+	background-color:green;
+	font-size:14px;
+	box-shadow:10px 10px aqua;
+	font-family:forte;
+	color:white;
+	position:absolute;
+	-webkit-transform:translate(500px,350px);
+	-webkit-animation:animi6 20s;
+}
+
+@-webkit-keyframes animi6
+{
+		0%	{position:relative; -webkit-transform:translate(500px,350px);}
+		20%	{-webkit-transform:translate(250px,220px); }
+		40%	{-webkit-transform:translate(20px,20px);}
+		60%	{-webkit-transform:translate(450px,20px);}
+		80%	{-webkit-transform:translate(900px,20px);}
+		100%{-webkit-transform:translate(700px,220px);}
+	}
+
+</style>
+
+<div id='container'>
+	<div class="article" id="article1"><h1 class='h1'>ARTICLE1</h1></br><p>You’re not connected to the Internet. To get online Help, which shows you the latest help content, you need to be connected to the Internet. Check your Internet connection.</p>
+	</div>
+
+	<div class="article" id="article2"><h1 class='h1'>ARTICLE2</h1></br><p>You’re not connected to the Internet. To get online Help, which shows you the latest help content, you need to be connected to the Internet. Check your Internet connection.</p>
+	</div>
+
+	<div class="article" id="article3"><h1 class='h1'>ARTICLE3</h1></br><p>You’re not connected to the Internet. To get online Help, which shows you the latest help content, you need to be connected to the Internet. Check your Internet connection.</p>
+	</div>
+
+	<div class="article" id="article4"><h1 class='h1'>ARTICLE4</h1></br><p>You’re not connected to the Internet. To get online Help, which shows you the latest help content, you need to be connected to the Internet. Check your Internet connection.</p>
+	</div>
+
+	<div class="article" id="article5"><h1 class='h1'>ARTICLE5</h1></br><p>You’re not connected to the Internet. To get online Help, which shows you the latest help content, you need to be connected to the Internet. Check your Internet connection.</p>
+	</div>
+
+	<div class="article" id="article6"><h1 class='h1'>ARTICLE6</h1></br><p>You’re not connected to the Internet. To get online Help, which shows you the latest help content, you need to be connected to the Internet. Check your Internet connection.</p>
+	</div>
+</div>
+</html>

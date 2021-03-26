@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<title> Video tube beta </title>
+	</head>
+	<script type="text/javascript" src='jQuery.js'></script>
+	<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		var videos=new Array(
+				'videos/Achko Machko Yo Yo Honey Singh.mp4',
+				'videos/Ashai Mugam.MP4',
+				'videos/Badtameez Dil.MP4',
+				'videos/Balam Pichkari.MP4',
+				'videos/David Banner - Speaker ft. Akon, Snoop Dogg, Lil Wayne.m4v',
+				'videos/Dr. Dre - Kush ft. Snoop Dogg, Akon.MP4',
+				'videos/zindagi na milegi dobara -sky diving.m4v' );
+		
+		var names=new Array(
+				'videos/Achko Machko - ft. Yo Yo Honey Singh',
+				'videos/Ashai Mugham - ft. Vidhya and Vandana',
+				'videos/Badtameez Dil - Ranbeer kapoor Deepika',
+				'videos/Balam Pichkari - Badtameez Dil',
+				'videos/9mm Akon - Ft. David Banner , Snoop dogg',
+				'videos/Dr. Dre - Kush ft. Snoop Dogg, Akon',
+				'videos/Zindagi Na Milegi Dobara - Sky Diving');
+
+		$('input').select(this).click(function()
+		{
+			var id= $(this).attr('id');
+			$("#info").html("<b style='color:black'>Now Playing :</b> &nbsp; &nbsp;<i> "+names[id] +"</i>");
+
+			$("#vid").attr('src',videos[id]);
+			$("#vid").attr('controls','controls');
+			$("#vid").attr('autoplay','autoplay');
+		})
+
+		$('select').change(function()
+		{
+			var newColor= $('#colorPicker').val();
+			$('#mains').css({'background':newColor});
+		})
+
+		$('input').select(this).mouseenter(function()
+		{
+			$(this).css({'height':'120px','width':'170px'});
+		})
+
+		$('input').select(this).mouseout(function()
+		{
+			$(this).css({'height':'91px','width':'140px'});
+		})
+
+	})
+	
+	</script>
+
+	<style type="text/css">
+		div
+		{
+			background:gray;
+			border:2px solid;
+		}
+		td
+		{
+			background-size:100% 100%;
+			color:white;
+		}
+		#vid
+		{
+			margin-left:50px;
+			margin-top:90px; 
+			height:470px; 
+			width:500px;
+		}
+		
+		#mains
+		{
+			position:absolute;
+			height:680px;
+			width:650px;
+		}
+		#lists
+		{
+			height:680px;
+			width:350px;
+			position:relative;
+			float:right;
+		}
+		#info
+		{
+			color:blue;
+			font-weight:bold;
+			-webkit-transform:translate(50px,70px);
+			position:absolute;
+			font-size:18px;
+		}
+		#colorcng
+		{
+			position:absolute;
+			-webkit-transform:translate(350px,00px);
+			width:350px;
+			height:50px;
+			font-size:18px;
+		}
+	</style>
+
+	<body>
+		<div id='mains'>
+			<p id="colorcng">
+				Choose background...
+				<select id="colorPicker">
+					<option value="gray">None</option>
+					<option value="yellow">Yellow</option>
+					<option value="salmon">Salmon</option>
+					<option value="lightblue">Light Blue</option>
+					<option value="limegreen">Lime Green</option>
+					<option value="aqua">Aqua</option>
+				</select>
+			</p> 
+			<p id='info'></p>
+			<video id='vid'></video>
+		</div>
+
+		<div id='lists'>
+			<table>
+				<tr>
+					<td>
+						1.
+					</td>
+					<td>
+						<input id='0' type="image" src="images/1.png"/>
+					</td>
+					<td>
+						Achko Machko - ft. Yo Yo Honey Singh
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						2.
+					</td>
+					<td>
+						<input id='1' type="image" src="images/2.png"/>
+					</td>
+					<td>
+						Ashai Mugham - ft. Vidhya and Vandana
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						3.
+					</td>
+					<td>
+						<input id='2' type="image" src="images/3.png"/>
+					</td>
+					<td>
+						Badtameez Dil - Ranbeer kapoor Deepika
+					</td>
+				</tr>
+				<tr>
+					<td>
+						4.
+					</td>
+					<td>
+						<input id='3' type="image" src="images/4.png"/>
+					</td>
+					<td>
+						Balam Pichkari - Badtameez Dil
+					</td>
+				</tr>
+				<tr>
+					<td>
+						5.
+					</td>
+					<td>
+						<input id='4' type="image" src="images/5.png"/>
+					</td>
+					<td>
+						9mm Akon - Ft. David Banner , Snoop dogg
+					</td>
+				</tr>
+				<tr>
+					<td>
+						6.
+					</td>
+					<td>
+						<input id='5' type="image" src="images/6.png"/>
+					</td>
+					<td>
+						Dr. Dre - Kush ft. Snoop Dogg, Akon
+					</td>
+				</tr>
+				<tr>
+					<td>
+						7.
+					</td>
+					<td>
+						<input id='6' type="image" src="images/7.png"/>
+					</td>
+					<td>
+						Zindagi Na Milegi Dobara - Sky Diving
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

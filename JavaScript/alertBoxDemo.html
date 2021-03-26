@@ -1,0 +1,39 @@
+<html>
+<body>
+<script type="text/javascript">
+function show_alert()
+{
+	alert("This is my first alert box");
+}
+function show_confirm()
+{
+	var r=confirm("Press a button");
+	if(r==true)
+	{
+		alert("You pressed Ok");
+	}
+	else
+	{
+		alert("You pressed cancel");
+	}
+}
+function show_prompt()
+{
+	var num1=prompt("Please enter number 1");
+	var num2=prompt("Please enter number 2");
+	var s=parseInt(num1);
+	var r=parseInt(num2);
+	if(num1!=null&&num2!=null && num1!=""&&num2!="")
+	{
+		var sum=s+r;
+		alert(sum);
+		
+	}
+}
+</script>
+<input type="button" onclick="show_alert()" value="Show alert box"/>
+<input type="button" onclick="show_confirm()" value="Show confirm box"/>
+<input type="button" onclick="show_prompt()" value="Show Prompt Box"/>
+</body>
+
+</html>
